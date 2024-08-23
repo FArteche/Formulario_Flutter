@@ -2,19 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 void main() {
-  runApp(const MyPage());
+  runApp(MyPage());
 }
 
 class MyPage extends StatelessWidget {
-  const MyPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: "Meu App",
       home: Scaffold(
-        appBar: ,
-        body: ,
+        appBar: AppBar(
+          title: Text("App1"),
+          backgroundColor: Colors.green,
+        ),
       ),
     );
   }
